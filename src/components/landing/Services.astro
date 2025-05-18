@@ -1,10 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import advertisingSvg from "@assets/images/services/advertising.svg?raw";
-import designSvg from "@assets/images/services/creative-designer-doing-multitasking.svg?raw";
-import mobileSvg from "@assets/images/services/mobile-app-ui-ux-design.svg?raw";
-import seoSvg from "@assets/images/services/seo-link-building.svg?raw";
-import websiteSvg from "@assets/images/services/website-ui-ux-development.svg?raw";
+import treadmillSvg from "@assets/images/services/treadmill.svg?raw";
+import taskSvg from "@assets/images/services/task.svg?raw";
+import dietSvg from "@assets/images/services/diet.svg?raw";
+import treningSvg from "@assets/images/services/trace.svg?raw";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -17,27 +16,22 @@ const points = [
 	{
 		title: t("websites.title"),
 		content: t("websites.content"),
-		image: websiteSvg,
+		image: treadmillSvg,
 	},
 	{
 		title: t("apps.title"),
 		content: t("apps.content"),
-		image: mobileSvg,
+		image: taskSvg,
 	},
 	{
 		title: t("uiux.title"),
 		content: t("uiux.content"),
-		image: designSvg,
+		image: dietSvg,
 	},
 	{
 		title: t("seo.title"),
 		content: t("seo.content"),
-		image: seoSvg,
-	},
-	{
-		title: t("advertising.title"),
-		content: t("advertising.content"),
-		image: advertisingSvg,
+		image: treningSvg,
 	},
 ];
 ---
