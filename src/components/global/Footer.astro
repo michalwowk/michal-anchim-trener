@@ -8,43 +8,45 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<footer class="section min-h-screen gap-y-10 py-3 lg:gap-y-32">
+<footer class="section gap-y-10 py-3 lg:gap-y-32">
 	<div class="relative flex-grow"></div>
 	<div class="relative grid grid-cols-6 gap-y-20 lg:grid-cols-12 lg:text-xl">
 		<div class="col-span-6 col-start-1 grid grid-cols-6 gap-6 lg:col-span-8">
 			<div class="col-span-2 col-start-4 flex flex-col gap-2 lg:col-span-3">
-				<a href="https://twitter.com//" target="_blank">Twitter / X</a>
-				<a href="https://www.instagram.com//" target="_blank">Instagram</a>
-				<a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-				<a href="https://tiktok.com/" target="_blank">TikTok</a>
+				<a href="https://www.facebook.com/profile.php?id=61576179116013" target="_blank">Facebook</a>
+				<a href="https://www.instagram.com/anchimmichal_trener/" target="_blank">Instagram</a>
+				<a href="mailto: anchimmichal@gmail.com" target="_blank">anchimmichal@gmail.com</a>
 			</div>
 			<div class="col-span-3 row-start-1 lg:col-span-2 lg:col-start-4 lg:row-start-auto">
 				<div class="flex flex-col gap-2">
 					<a href={translatePath("/")}>Home</a>
-					<a href={translatePath("/blog/")}>Blog</a>
-					<a href={translatePath("/tags/")}>Tags</a>
-					<a href={translatePath("/contact/")}>{t("contacts")}</a>
-					<a href={translatePath("/terms/")}>Terms</a>
-					<a href={translatePath("/privacy/")}>Privacy Policy</a>
-					<a href={translatePath("/rss.xml")}>RSS</a>
-				</div>
-			</div>
-			<div class="col-span-3 mt-10 lg:col-start-4">
-				<div class="relative flex flex-col overflow-hidden"></div>
-				<div class="relative mt-1 flex h-8 flex-col overflow-hidden">
-					<a href="mailto:test@mintaka.co" class="block cursor-pointer overflow-hidden">test@mintaka.co</a>
+					<a href={translatePath("/o-mnie")}>O mnie</a>
+					<a href={translatePath("/kontakt/")}>Kontakt</a>
 				</div>
 			</div>
 		</div>
 		<div class="col-span-6 row-start-1 text-5xl leading-tight lg:col-span-4 lg:row-start-auto lg:text-6xl">
 			<!-- Newsletter Section -->
-			<div>{t("footer.newsletter")}</div>
-			<div>{t("footer.newsletter2")}</div>
-			<Newsletter />
+			<div class="text-[24px]">{t("footer.newsletter")}</div>
+			<div class:list={["relative mt-8 h-20 max-w-[30rem] font-display leading-6 lg:max-w-[35rem]"]}>
+				<a href="tel:+48691404037">691 404 037</a>
+			</div>
 		</div>
 	</div>
 	<div class="relative mt-4 flex w-full items-end justify-between gap-y-4 text-sm lg:text-xl lg:font-normal">
-		<div>©2023 YOUR COMPANY</div>
+		<div class="border-text-primary border-t">
+			<div class="py-3">
+				<p class="border-t-1 border-gray-100 text-center text-sm">
+					Made with 🧡 by
+					<a
+						href="https://www.rocketdev.com.pl"
+						target="_blank"
+						class="inline-block max-w-3xl bg-gradient-to-tr from-orange-700 to-yellow-500 bg-clip-text font-extrabold text-transparent hover:from-orange-800 hover:to-yellow-600">
+						RocketDev
+					</a>
+				</p>
+			</div>
+		</div>
 		<!-- https://codepen.io/fliseno1k/pen/WNboLBy -->
 		<button
 			id="go-top-button"

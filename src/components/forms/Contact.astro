@@ -13,48 +13,20 @@ const translatePath = useTranslatedPath(lang);
 		<div class="gradient-element"></div>
 	</div>
 	<div class="mx-auto">
-		<Title class="pb-10 pt-20 uppercase" title={t("contact.title")} subtitle={t("contact.subtitle")} />
-		<form data-static-form-name="contact" class="mx-auto max-w-2xl pt-12 lg:pt-20">
-			<div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-				<div class="form-field sm:col-span-2">
-					<label for="name" class="form-label">{t("contact.name")}*</label>
-					<input type="text" name="name" id="name" autocomplete="given-name" required />
-				</div>
-				<div class="form-field sm:col-span-2">
-					<label for="email" class="form-label">{t("contact.email")}*</label>
-					<input type="email" name="email" id="email" autocomplete="email" required />
-				</div>
-				<div class="form-field sm:col-span-2">
-					<label for="company" class="form-label">{t("contact.company")}</label>
-					<input type="text" name="company" id="company" autocomplete="organization" />
-				</div>
-				<div class="form-field sm:col-span-2">
-					<label for="message" class="form-label">{t("contact.message")}*</label>
-					<textarea name="message" id="message" rows="4" required></textarea>
-				</div>
-				<div class="flex gap-x-4 sm:col-span-2">
-					<label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-						{t("contact.agree")}
-						<a href="/privacy" class="font-semibold text-slate-800">privacy policy</a>.
-					</label>
-				</div>
-			</div>
-			<div class="flex pt-10">
-				<div class="squircle-bg rounded-lg bg-zinc-900">
-					<button
-						type="submit"
-						class="flex h-10 w-full max-w-52 flex-1 items-center justify-center px-4 py-2 text-xl text-slate-200 transition-all hover:text-white sm:w-auto md:font-bold lg:h-10">
-						{t("contact.send")}
-					</button>
-				</div>
-			</div>
-		</form>
+		<Title class="pb-16 pt-20 uppercase" title={t("contact.title")} />
+		<div class="mx-auto max-w-2xl flex-col gap-4">
+			<p class="mb-4 font-mono text-xl font-extrabold sm:text-2xl lg:text-4xl"><a href="tel: +48691404038">Telefon: 691 404 037</a></p>
+			<p class="font-mono text-xl font-extrabold sm:text-2xl lg:text-4xl">Email: anchimmichal@gmail.com</p>
+			<p class="font-mono text-xl font-extrabold sm:text-2xl lg:text-4xl">
+				<a href="https://www.instagram.com/anchimmichal_trener/">Insta: anchimmichal_trener</a>
+			</p>
+		</div>
 	</div>
 </section>
 
 <style>
 	.gradient-element {
-		@apply relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem];
+		@apply relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#7cadf7] to-[#0e01c2] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem];
 		clip-path: polygon(
 			74.1% 44.1%,
 			100% 61.6%,

@@ -20,12 +20,12 @@ let pages = [
 	// 	url: "/services",
 	// },
 	{
-		title: "Blog",
-		url: "/blog/",
+		title: "O mnie",
+		url: "/o-mnie/",
 	},
 	{
-		title: t("contacts"),
-		url: "/contact/",
+		title: "Kontakt",
+		url: "/kontakt/",
 	},
 ];
 
@@ -204,7 +204,7 @@ const { pathname } = Astro.url;
 													: ""
 											}`}>
 											<span class="menu-item-container inline-block">
-												<span class="menu-item px-4 py-1 font-semibold uppercase tracking-wide text-zinc-400 hover:text-white focus:text-white focus:shadow-none focus:outline-none">
+												<span class="menu-item text-nowrap px-4 py-1 font-semibold uppercase tracking-wide text-zinc-400 hover:text-white focus:text-white focus:shadow-none focus:outline-none">
 													{page.title}
 												</span>
 											</span>
@@ -212,16 +212,6 @@ const { pathname } = Astro.url;
 									</li>
 								))
 							}
-							<li>
-								<a href={translatePath(path, `${lang === "it" ? "en" : "it"}`)} class="inline-block cursor-pointer px-1 py-[0.33rem]">
-									<span class="menu-item-container inline-block">
-										<span
-											class="menu-item px-4 py-1 font-semibold uppercase tracking-wide text-zinc-400 hover:text-white focus:text-white focus:shadow-none focus:outline-none">
-											{lang === "it" ? "en" : "it"}
-										</span>
-									</span>
-								</a>
-							</li>
 						</ul>
 					</nav>
 				</div>
@@ -232,7 +222,7 @@ const { pathname } = Astro.url;
 
 <style>
 	.navigation {
-		mix-blend-mode: difference;
+		mix-blend-mode: hard-light;
 	}
 	.navigation.navbar-open {
 		mix-blend-mode: luminosity;
@@ -331,12 +321,12 @@ const { pathname } = Astro.url;
 						const pathName = window.location.pathname;
 
 						if (pathName === "/" || pathName === "/it/") {
-							return "9.5rem";
-						} else if (pathName.startsWith("/blog") || pathName.startsWith("/it/blog")) {
-							return "3.5rem";
+							return "7.5rem";
+						} else if (pathName.startsWith("/o-mnie") || pathName.startsWith("/it/blog")) {
+							return "1.5rem";
 						}
 
-						return "-3.5rem";
+						return "-6rem";
 					},
 				},
 				"<",

@@ -1,0 +1,73 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { AstroSeoProps } from "@astrolib/seo";
+import Img from "@/assets/images/projects/trening-personalny-bialystok.jpg";
+import { Image } from "astro:assets";
+import Title from "@/components/global/Title.astro";
+
+const seo: AstroSeoProps = {
+	title: "O mnie - Trener personaly Białystok Michał Anchim",
+	description:
+		"Jestem trenerem personalnym z Białegostoku, pracuję w zawodzie od 2020 roku. Treningi pomogły mi pokonać nadwagę , a dziś wspieram innych w osiąganiu ich celów zdrowotnych i sylwetkowych. Tworzę indywidualne plany treningowe, dbając o skuteczność i bezpieczeństwo ćwiczeń.",
+	canonical: "https://mintaka.co/404/",
+};
+---
+
+<BaseLayout seo={seo}>
+	<section>
+		<div class="mx-auto max-w-7xl px-8 py-12 md:px-12 lg:px-32 lg:py-32">
+			<div class="flex flex-col gap-6 pt-20">
+				<div class="inline-flex flex-col gap-4">
+					<div class="inline-flex items-center gap-4">
+						<div class="hidden h-1 w-20 bg-black md:block"></div>
+						<span class="font-mono text-xs font-semibold uppercase tracking-wide" set:html="O mnie" />
+					</div>
+					<h1 class="font-display text-5xl font-extrabold sm:text-6xl md:text-7xl lg:text-9xl">Cześć!</h1>
+				</div>
+				<p class="max-w-2xl text-base text-slate-500">
+					<em>
+						Nazywam się Michał Anchim i jestem trenerem personalnym z Białegostoku, pracuję w zawodzie od 2020 roku. Treningi pomogły mi
+						pokonać nadwagę , a dziś wspieram innych w osiąganiu ich celów zdrowotnych i sylwetkowych. Tworzę indywidualne plany
+						treningowe, dbając o skuteczność i bezpieczeństwo ćwiczeń.
+					</em>
+				</p>
+			</div>
+			<div class="mt-12 w-full justify-center">
+				<Image class="mt-12 w-full rounded-lg object-cover" src={Img} alt="" />
+
+				<div class="prose-styles mt-12">
+					<h2>Tylul 1</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus accusamus dolorum porro, facere illum assumenda
+						quasi! Ratione, enim exercitationem.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus accusamus dolorum porro, facere illum assumenda
+						quasi! Ratione, enim exercitationem.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam minima aliquid aut commodi impedit, omnis, aliquam
+						voluptates sed rerum accusantium velit. Quaerat blanditiis, reiciendis excepturi sit facere dolor, aperiam rem similique
+						labore quae mollitia dolorem quisquam quis qui? Cumque soluta alias impedit possimus eos omnis excepturi itaque iste
+						similique.
+					</p>
+					<h2>Tylul 2</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus accusamus dolorum porro, facere illum assumenda
+						quasi! Ratione, enim exercitationem.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus accusamus dolorum porro, facere illum assumenda
+						quasi! Ratione, enim exercitationem.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam minima aliquid aut commodi impedit, omnis, aliquam
+						voluptates sed rerum accusantium velit. Quaerat blanditiis, reiciendis excepturi sit facere dolor, aperiam rem similique
+						labore quae mollitia dolorem quisquam quis qui? Cumque soluta alias impedit possimus eos omnis excepturi itaque iste
+						similique.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
