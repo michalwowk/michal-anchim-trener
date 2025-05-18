@@ -13,7 +13,7 @@ export default defineConfig({
 			},
 		},
 	},
-	site: "https://michalwowk.github.io",
+	site: "https://<random-string>.pages.github.io/",
 	i18n: {
 		defaultLocale: "en",
 		locales: ["en", "it"],
