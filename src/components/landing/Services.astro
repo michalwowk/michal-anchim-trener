@@ -44,8 +44,8 @@ const points = [
 		</div>
 		{
 			points.map(({ title, content, image }) => (
-				<div class="point flex h-screen w-full flex-col items-center justify-center gap-x-20 gap-y-12 p-16 pr-0 md:flex-row lg:gap-x-40">
-					<div class="hidden w-full max-w-80 lg:block">
+				<div class="point flex h-screen w-full flex-col items-center justify-center gap-x-20 gap-y-12 p-16 pr-0 lg:flex-row lg:gap-x-40">
+					<div class="relative left-9 h-0 scale-50 opacity-10 md:hidden lg:static lg:left-0 lg:block lg:h-auto lg:w-full lg:max-w-80 lg:scale-100 lg:opacity-100">
 						<Fragment set:html={image} class="" />
 					</div>
 					<article class="flex flex-col gap-14">
